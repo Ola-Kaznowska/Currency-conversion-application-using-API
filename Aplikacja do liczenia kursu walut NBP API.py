@@ -14,7 +14,7 @@ print("KALKULATOR WALUT")
 
 waluta = input("Podaj walutę: ")
 
-link = f"http://api.nbp.pl/api/exchangerates/rates/A/{waluta}/?format=json" #Naprawiony Bug: Nie bylo instrukcji f (formatowania)
+link = f"https://api.nbp.pl/api/exchangerates/rates/A/{waluta}/?format=json" #Naprawiony Bug: Nie bylo instrukcji f (formatowania)
 
 strona = requests.get(link) #naprawiony Bug: w repuetsts.get zabraklo odwolania sie do zmiennej link
 
